@@ -1,0 +1,14 @@
+-D
+__TARGET_gb
+-D
+__PORT_sm83
+-I
+/home/deck/Documents/Mix It Up Game/assets/engine/include
+-I
+/home/deck/Documents/Mix It Up Game/assets/engine/include/states
+-isystem
+/home/deck/.cache/gbstudio-v4/_gbsbuild/include
+-isystem
+/home/deck/.cache/gbstudio-v4/_gbstools/gbdk/include
+--std
+c11

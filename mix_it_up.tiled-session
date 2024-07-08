@@ -1,0 +1,56 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "tilemaps/overworld.tmx",
+    "expandedProjectPaths": [
+        "assets/fonts",
+        ".",
+        "assets",
+        "tilemaps"
+    ],
+    "fileStates": {
+        ":/automap-tiles.tsx": {
+            "scaleInDock": 1
+        },
+        "pirates_kenneynl.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilemaps/overworld.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 386.75,
+                "y": 249.75
+            }
+        },
+        "village_kenneynl.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "/home/deck/Documents/Mix It Up Game/Deps/Village/Tilemap",
+    "map.height": 64,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 64,
+    "openFiles": [
+        "pirates_kenneynl.tsx",
+        "tilemaps/overworld.tmx",
+        "village_kenneynl.tsx"
+    ],
+    "project": "mix_it_up.tiled-project",
+    "recentFiles": [
+        "pirates_kenneynl.tsx",
+        "village_kenneynl.tsx",
+        "tilemaps/overworld.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
