@@ -3890,7 +3890,9 @@
                                         "args": {
                                             "text": [
                                                 "Hope those bananas\nare still good.",
-                                                "Everyone loved the\ncoconut cannonball"
+                                                "Everyone loved the\ncoconut cannonball",
+                                                "We have no more\nbananas. Yes!",
+                                                "We have no more\nbananas today!"
                                             ],
                                             "avatarId": ""
                                         },
@@ -3926,6 +3928,39 @@
                                             "avatarId": ""
                                         },
                                         "id": "738ad518-c9b1-4025-a484-0e371d2d27b0"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "7e783732-29f3-4a05-8787-9b24ca60e202",
+                                            "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+                                        },
+                                        "id": "1ac46d4e-7fa9-4627-bd0b-55d74d3cb7b7"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "7e783732-29f3-4a05-8787-9b24ca60e202",
+                                            "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+                                        },
+                                        "id": "78eaf46e-0158-46b2-aec2-7777e51c5493"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_MOVE_TO",
+                                        "args": {
+                                            "actorId": "7e783732-29f3-4a05-8787-9b24ca60e202",
+                                            "x": {
+                                                "type": "number",
+                                                "value": 5
+                                            },
+                                            "y": {
+                                                "type": "number",
+                                                "value": 12
+                                            },
+                                            "moveType": "horizontal",
+                                            "useCollisions": true
+                                        },
+                                        "id": "942c6e0c-1e4f-4a8c-aac8-271c4634592a"
                                     },
                                     {
                                         "command": "EVENT_TEXT",
@@ -4028,10 +4063,48 @@
                     "id": "9f9e2e99-60e7-4f30-a8a1-e3e3d4ee517a",
                     "x": 7,
                     "y": 12
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "f1b2e6e8-5bd9-424e-8348-6a761ca417ab",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_18",
+                    "script": [],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "7e783732-29f3-4a05-8787-9b24ca60e202",
+                    "x": 9,
+                    "y": 4
                 }
             ],
             "triggers": [],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_CAMERA_SET_POSITION",
+                    "args": {
+                        "x": {
+                            "type": "number",
+                            "value": 1
+                        },
+                        "y": {
+                            "type": "number",
+                            "value": 1
+                        }
+                    },
+                    "id": "ef823166-46d4-483e-8b70-ab154743ccdc"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
@@ -14438,8 +14511,8 @@
         }
     ],
     "settings": {
-        "startSceneId": "b43ba1c1-1c2e-4d69-9c31-be9b9e1b03d5",
-        "startX": 11,
+        "startSceneId": "9e46957c-58ed-4e48-9dfb-45dd55340e94",
+        "startX": 3,
         "startY": 14,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
@@ -14449,7 +14522,7 @@
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": true,
         "worldScrollX": 1840,
-        "worldScrollY": 2056,
+        "worldScrollY": 1898,
         "zoom": 297.5,
         "sgbEnabled": false,
         "customHead": "",
@@ -14535,7 +14608,7 @@
         "customControlsSelect": [
             "Shift"
         ],
-        "debuggerEnabled": false,
+        "debuggerEnabled": true,
         "debuggerScriptType": "editor",
         "debuggerVariablesFilter": "all",
         "debuggerCollapsedPanes": [],
