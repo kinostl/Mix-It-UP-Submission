@@ -640,7 +640,149 @@
             "symbol": "scene_5",
             "x": 984,
             "y": 80,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_25",
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "0",
+                                "flag": 3,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Go unlock somethin\nand leave me be."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "67e61e0f-194c-4f45-92cf-c53d7b07c86f"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "35ad5ceb-61ea-47b4-a86e-0e535e19bf72"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "2bbafe9a-05ac-4558-8851-bb07c730cfde"
+                        },
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "1",
+                                "flag": 2,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You want to know\nwhat ghosts like?",
+                                                "I'm a haunted\nskull, why would I",
+                                                "I think I remember\nRotten eclairs!",
+                                                "No, I don't have\nany. Maybe someone",
+                                                "hid some somewhere",
+                                                "Here, take this \nkey and get lost."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "158d4362-a344-4148-babd-abd44fb68d9d"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You received:\nSkeleton's Key!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "46a00da8-95fc-452d-94b0-8434ba4cba22"
+                                    },
+                                    {
+                                        "command": "EVENT_ADD_FLAGS",
+                                        "args": {
+                                            "variable": "0",
+                                            "flag1": false,
+                                            "flag2": false,
+                                            "flag3": false,
+                                            "flag4": true,
+                                            "flag5": false,
+                                            "flag6": false,
+                                            "flag7": false,
+                                            "flag8": false,
+                                            "flag9": false,
+                                            "flag10": false,
+                                            "flag11": false,
+                                            "flag12": false,
+                                            "flag13": false,
+                                            "flag14": false,
+                                            "flag15": false,
+                                            "flag16": false
+                                        },
+                                        "id": "365c5f07-9ff3-415e-b722-d2fb71f49923"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "84d94062-0830-43dc-a8f9-7bd7f2015706"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "18b49aec-3cc0-435f-b633-37f8c7cdeb05"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Get lost, this is\nmy island.",
+                                    "I'm haunting here!"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "2918187a-d773-402e-a11f-00d50032c2d0"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "d0e1badc-3520-4621-85e0-3f1b4b3084e8"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "179b2006-c6ab-4c64-a152-75b77c3528c3",
+                    "x": 13,
+                    "y": 12
+                }
+            ],
             "triggers": [],
             "script": [],
             "playerHit1Script": [],
@@ -3436,7 +3578,6 @@
                 15,
                 15,
                 15,
-                15,
                 0,
                 0,
                 0,
@@ -3457,7 +3598,7 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 15,
                 0,
                 0,
@@ -3479,7 +3620,7 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 15,
                 0,
                 0,
@@ -3501,8 +3642,9 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 15,
+                0,
                 0,
                 0,
                 0,
@@ -3524,7 +3666,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -3546,7 +3688,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -3568,7 +3710,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -3590,7 +3732,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -3612,7 +3754,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -3634,7 +3776,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -3656,7 +3798,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -3678,7 +3820,7 @@
                 0,
                 0,
                 15,
-                15,
+                0,
                 0,
                 0,
                 0,
@@ -3700,7 +3842,6 @@
                 0,
                 0,
                 15,
-                15,
                 0,
                 0,
                 0,
@@ -3721,7 +3862,7 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 15,
                 0,
                 0,
@@ -3743,7 +3884,7 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 15,
                 0,
                 0,
@@ -3765,8 +3906,9 @@
                 0,
                 0,
                 0,
-                15,
+                0,
                 15,
+                0,
                 0,
                 0,
                 0,
@@ -4162,7 +4304,38 @@
                     "y": 4
                 }
             ],
-            "triggers": [],
+            "triggers": [
+                {
+                    "name": "",
+                    "id": "52ab99b8-d36a-40cb-91fa-e415a8fc2dd6",
+                    "x": 0,
+                    "y": 1,
+                    "symbol": "trigger_17",
+                    "width": 1,
+                    "height": 16,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "b43ba1c1-1c2e-4d69-9c31-be9b9e1b03d5",
+                                "x": {
+                                    "type": "number",
+                                    "value": 19
+                                },
+                                "y": {
+                                    "type": "property",
+                                    "target": "player",
+                                    "property": "ypos"
+                                },
+                                "direction": "left",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "a76e0218-5284-4f5b-93fc-19a3d57f847a"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
             "script": [
                 {
                     "command": "EVENT_CAMERA_SET_POSITION",
@@ -4940,6 +5113,121 @@
                     "symbol": "actor_9",
                     "script": [
                         {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "0",
+                                "flag": 3,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You put the key\nfrom the Skull in",
+                                                "It opens the chest\nIt gets stuck!",
+                                                "Ew. In it theres\nrotten eclairs."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "0b3d38d4-e13b-4b13-ad6d-e8c8f61dea03"
+                                    },
+                                    {
+                                        "command": "EVENT_CLEAR_FLAGS",
+                                        "args": {
+                                            "variable": "0",
+                                            "flag1": false,
+                                            "flag2": false,
+                                            "flag3": false,
+                                            "flag4": true,
+                                            "flag5": false,
+                                            "flag6": false,
+                                            "flag7": false,
+                                            "flag8": false,
+                                            "flag9": false,
+                                            "flag10": false,
+                                            "flag11": false,
+                                            "flag12": false,
+                                            "flag13": false,
+                                            "flag14": false,
+                                            "flag15": false,
+                                            "flag16": false
+                                        },
+                                        "id": "ad3e4418-ca82-4c6f-a5e3-d7b552e40c7e"
+                                    },
+                                    {
+                                        "command": "EVENT_ADD_FLAGS",
+                                        "args": {
+                                            "variable": "0",
+                                            "flag1": false,
+                                            "flag2": false,
+                                            "flag3": false,
+                                            "flag4": false,
+                                            "flag5": true,
+                                            "flag6": false,
+                                            "flag7": false,
+                                            "flag8": false,
+                                            "flag9": false,
+                                            "flag10": false,
+                                            "flag11": false,
+                                            "flag12": false,
+                                            "flag13": false,
+                                            "flag14": false,
+                                            "flag15": false,
+                                            "flag16": false
+                                        },
+                                        "id": "7124b161-7c5e-4fc0-adc2-b7712e2959a8"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You found:\nRotten Eclairs",
+                                                "Ew, they're in \nyour inventory",
+                                                "... the empty \nchest washed away?"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "4cdd9f56-e98e-4baa-95b4-314123f5df1c"
+                                    },
+                                    {
+                                        "command": "EVENT_ADD_FLAGS",
+                                        "args": {
+                                            "variable": "1",
+                                            "flag1": false,
+                                            "flag2": false,
+                                            "flag3": false,
+                                            "flag4": true,
+                                            "flag5": false,
+                                            "flag6": false,
+                                            "flag7": false,
+                                            "flag8": false,
+                                            "flag9": false,
+                                            "flag10": false,
+                                            "flag11": false,
+                                            "flag12": false,
+                                            "flag13": false,
+                                            "flag14": false,
+                                            "flag15": false,
+                                            "flag16": false
+                                        },
+                                        "id": "4d1f227d-6fb9-459b-921a-a644bdc75094"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "a1bc30c2-98d8-451c-91fa-74adaa013c16"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "fc9636e5-f506-4798-9d58-8e858eec6eb7"
+                        },
+                        {
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
@@ -4950,7 +5238,30 @@
                             "id": "85eb922f-a94d-4a5e-a38a-fbde7a3c90df"
                         }
                     ],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "1",
+                                "flag": 3,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "6d21b80d-ec81-440f-8531-5fce8533512d"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "4ee9313e-4821-4a03-b88f-7b8c93ab2464"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -6003,48 +6314,6 @@
                     "id": "7c7ddbe3-5d2c-488d-ab06-51824192b616",
                     "x": 7,
                     "y": 12
-                },
-                {
-                    "name": "",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": false,
-                    "persistent": false,
-                    "collisionGroup": "",
-                    "symbol": "actor_14",
-                    "script": [
-                        {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "Sorry, no one is\nhome right now."
-                                ],
-                                "avatarId": ""
-                            },
-                            "id": "8f3deb01-1fb9-4de1-975b-1e8119865836"
-                        }
-                    ],
-                    "startScript": [
-                        {
-                            "command": "EVENT_ACTOR_HIDE",
-                            "args": {
-                                "actorId": "$self$"
-                            },
-                            "id": "77fc04cd-d59b-4b7c-aa41-b789d33853e8"
-                        }
-                    ],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "b3df705e-e7ab-40f4-a7a9-19b6f35893f6",
-                    "x": 19,
-                    "y": 6
                 }
             ],
             "triggers": [
@@ -6144,7 +6413,176 @@
             "symbol": "scene_28",
             "x": 800,
             "y": 816,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_14",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Sorry, no one is\nhome right now."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "8f3deb01-1fb9-4de1-975b-1e8119865836"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "77fc04cd-d59b-4b7c-aa41-b789d33853e8"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "b3df705e-e7ab-40f4-a7a9-19b6f35893f6",
+                    "x": 5,
+                    "y": 6
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_19",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I have a Goat"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "5a8f8539-9ddc-4ad0-bb8a-136630f97cd5"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "cc03206a-611b-4a41-8644-ce85d44cca07"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "a6c87968-d52d-4757-989c-65ce3ec8d7c5",
+                    "x": 9,
+                    "y": 6
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_20",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I have a Lion"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "0fe34c6c-e3ba-4bb6-aa6a-9303c5ebb215"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "c56f154e-16ab-4f7c-8088-f9ec25e4b659"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "78862d27-8c95-4abb-839c-afbd93a947d3",
+                    "x": 11,
+                    "y": 6
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_21",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I have a \nBrand New Car!"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "fd70f74f-6a72-42bc-be40-4eb4e9a13fa1"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "71b6f05f-95f8-45e1-8808-4b4499d319fa"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "de07e33c-0f84-4920-8470-88a5ffc911df",
+                    "x": 13,
+                    "y": 6
+                }
+            ],
             "triggers": [],
             "script": [],
             "playerHit1Script": [],
@@ -6607,7 +7045,98 @@
             "symbol": "scene_29",
             "x": 984,
             "y": 816,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_22",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Sorry, you already\nfound all of this\nadventure's loot.",
+                                    "Try again later.",
+                                    "As in your next\nadventure.",
+                                    "Not this one.\nWe're plum out of\ndirection."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "e9f2a50f-27db-4bc2-b19d-b40cd6cf287c"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "a1d5e596-1a45-4a94-adf1-730e2e0f09e7"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "cb58b52a-e478-454e-9b1a-9b9cbe37b783",
+                    "x": 7,
+                    "y": 14
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_23",
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Sorry, you already\nfound all of this\nadventure's loot.",
+                                    "Try again later.",
+                                    "As in your next\nadventure.",
+                                    "Not this one.\nWe're plum out of\ndirection."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "bc2df33d-a134-4ba1-a6de-3825f3a44916"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "72be60ee-33c4-4de2-af78-bdf50efba99a"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "87427cfa-4166-4698-98cf-d7e7b47ab879",
+                    "x": 9,
+                    "y": 14
+                }
+            ],
             "triggers": [],
             "script": [],
             "playerHit1Script": [],
@@ -7682,6 +8211,36 @@
                                 "false": []
                             },
                             "id": "471aa5e9-9cf3-4b68-954a-f5168d19fa6b"
+                        },
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "1",
+                                "flag": 0,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Well, go on ahead.\nSay hi to Krab!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "d5bcb794-56b8-45e7-850a-531e165a6482"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "dca8dbba-961c-4f60-a2de-5475f15194ed"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "5b65fc11-803a-4582-a8ec-92794f837620"
                         },
                         {
                             "command": "EVENT_IF_FLAGS_COMPARE",
@@ -10145,7 +10704,167 @@
             "symbol": "scene_36",
             "x": 1168,
             "y": 1000,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "b3ccf78c-9d63-40bd-8351-d14ad370636c",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_24",
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "1",
+                                "flag": 2,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Did you get that\nthing I sent you?",
+                                                "Out for. The thing\nI sent you out for"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "c8c659ae-561d-4cc1-8657-5f03d1582485"
+                                    },
+                                    {
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
+                                        "args": {
+                                            "variable": "0",
+                                            "flag": 4,
+                                            "__collapseElse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Oh. These are\nrotten eclairs.",
+                                                            "Disgusting."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "6815ff1a-b9b4-4043-b7fa-8dae2c9ea657"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The ghost ate them\nIt ate them??"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "10e84eb0-e1e5-4881-9b09-394e987378b4"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Well. That was ",
+                                                            "An experience.",
+                                                            "Heres your limes."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "9eb6816b-17ac-4400-b779-eaeb8e24230a"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You received:\nBarrel of Limes!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "0173dc31-b861-4af2-8b97-3507b2d4aad3"
+                                                },
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Scurvy sucks. Eat\nyour citrus, kid."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "8a70fc0c-5056-45e4-a7da-e84bdc7aa52b"
+                                                }
+                                            ],
+                                            "false": []
+                                        },
+                                        "id": "d57c0515-28ff-45c9-ac1c-71e3ae484668"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "6fdb0503-82d4-4311-be24-7775aad89489"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "aa8aabfd-5ed9-492b-9d62-c569f672a484"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Like my boat?",
+                                    "Whats that? \nFruit Grotto?",
+                                    "Whats a Grotto.\nI have limes",
+                                    "You want limes?\nGo get me a uh",
+                                    "Whatever. Bring me\nsomething I would\nlike. I'm picky."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "4da11613-ac9f-40da-9cd5-9cbc3db2c870"
+                        },
+                        {
+                            "command": "EVENT_ADD_FLAGS",
+                            "args": {
+                                "variable": "1",
+                                "flag1": false,
+                                "flag2": false,
+                                "flag3": true,
+                                "flag4": false,
+                                "flag5": false,
+                                "flag6": false,
+                                "flag7": false,
+                                "flag8": false,
+                                "flag9": false,
+                                "flag10": false,
+                                "flag11": false,
+                                "flag12": false,
+                                "flag13": false,
+                                "flag14": false,
+                                "flag15": false,
+                                "flag16": false
+                            },
+                            "id": "977fb605-c615-48b2-8699-5f34afc8e68d"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "5c29836c-020b-430c-b23d-926efd36b407",
+                    "x": 15,
+                    "y": 16
+                }
+            ],
             "triggers": [],
             "script": [],
             "playerHit1Script": [],
@@ -10573,8 +11292,8 @@
             "autoFadeSpeed": 1,
             "id": "2bf1b223-b298-4104-82c8-2abe8a75b82a",
             "symbol": "scene_38",
-            "x": 440,
-            "y": 1184,
+            "x": 72,
+            "y": 640,
             "actors": [
                 {
                     "name": "",
@@ -14561,7 +15280,9 @@
             "flags": {
                 "flag1": "Bucket",
                 "flag2": "Cannonballs",
-                "flag3": "Bananas"
+                "flag3": "Bananas",
+                "flag4": "Skeleton Key",
+                "flag5": "Rotten Eclairs"
             }
         },
         {
@@ -14570,7 +15291,9 @@
             "symbol": "var_story_events_1",
             "flags": {
                 "flag1": "Cleared Cannonballs",
-                "flag2": "Ghoti Asks For Help"
+                "flag2": "Ghoti Asks For Help",
+                "flag3": "Ghost Asks for Something",
+                "flag4": "Treasure Open"
             }
         }
     ],
@@ -14592,12 +15315,12 @@
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
-        "showConnections": true,
+        "showConnections": "all",
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 1840,
-        "worldScrollY": 1977,
-        "zoom": 297.5,
+        "worldScrollX": 120,
+        "worldScrollY": 711,
+        "zoom": 104,
         "sgbEnabled": false,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
