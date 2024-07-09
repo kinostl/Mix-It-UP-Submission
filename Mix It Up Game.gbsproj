@@ -4070,15 +4070,89 @@
                     "animate": false,
                     "spriteSheetId": "f1b2e6e8-5bd9-424e-8348-6a761ca417ab",
                     "direction": "down",
-                    "moveSpeed": 1,
+                    "moveSpeed": 2,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": false,
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_18",
-                    "script": [],
-                    "startScript": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "0",
+                                "flag": 2,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You really saved\nus there! Thanks!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "a352ef70-1b8f-4413-bd23-e6ed95a96028"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "28d73674-9061-4e69-bdd2-7f21ee033ab0"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "e9127047-daf4-4797-bfd0-7ff3700f70a2"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "What do you want\nI'm busy doing",
+                                    "I'm not explaining\nmyself to an arrow"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "f2bff030-812e-4544-a055-01ca79e444f5"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "0",
+                                "flag": 2,
+                                "__collapseElse": true,
+                                "__disableElse": true,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_POSITION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "x": {
+                                                "type": "number",
+                                                "value": 5
+                                            },
+                                            "y": {
+                                                "type": "number",
+                                                "value": 12
+                                            }
+                                        },
+                                        "id": "9ebe59ef-4581-421d-bcc1-ca12a22c8c1f"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "babbdea1-31ff-4231-ba57-34deda9ec462"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -7608,6 +7682,36 @@
                                 "false": []
                             },
                             "id": "471aa5e9-9cf3-4b68-954a-f5168d19fa6b"
+                        },
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "1",
+                                "flag": 0,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Well, go on ahead.\nSay hi to Krab!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "d5bcb794-56b8-45e7-850a-531e165a6482"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "dca8dbba-961c-4f60-a2de-5475f15194ed"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "5b65fc11-803a-4582-a8ec-92794f837620"
                         },
                         {
                             "command": "EVENT_IF_FLAGS_COMPARE",
@@ -14521,8 +14625,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 1840,
-        "worldScrollY": 1898,
+        "worldScrollX": 612,
+        "worldScrollY": 2925,
         "zoom": 297.5,
         "sgbEnabled": false,
         "customHead": "",

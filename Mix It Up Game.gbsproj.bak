@@ -4070,15 +4070,89 @@
                     "animate": false,
                     "spriteSheetId": "f1b2e6e8-5bd9-424e-8348-6a761ca417ab",
                     "direction": "down",
-                    "moveSpeed": 1,
+                    "moveSpeed": 2,
                     "animSpeed": 15,
                     "paletteId": "",
                     "isPinned": false,
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_18",
-                    "script": [],
-                    "startScript": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "0",
+                                "flag": 2,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You really saved\nus there! Thanks!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "a352ef70-1b8f-4413-bd23-e6ed95a96028"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "28d73674-9061-4e69-bdd2-7f21ee033ab0"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "e9127047-daf4-4797-bfd0-7ff3700f70a2"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "What do you want\nI'm busy doing",
+                                    "I'm not explaining\nmyself to an arrow"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "f2bff030-812e-4544-a055-01ca79e444f5"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "0",
+                                "flag": 2,
+                                "__collapseElse": true,
+                                "__disableElse": true,
+                                "__collapse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SET_POSITION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "x": {
+                                                "type": "number",
+                                                "value": 5
+                                            },
+                                            "y": {
+                                                "type": "number",
+                                                "value": 12
+                                            }
+                                        },
+                                        "id": "9ebe59ef-4581-421d-bcc1-ca12a22c8c1f"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "babbdea1-31ff-4231-ba57-34deda9ec462"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -4089,7 +4163,22 @@
                 }
             ],
             "triggers": [],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_CAMERA_SET_POSITION",
+                    "args": {
+                        "x": {
+                            "type": "number",
+                            "value": 1
+                        },
+                        "y": {
+                            "type": "number",
+                            "value": 1
+                        }
+                    },
+                    "id": "ef823166-46d4-483e-8b70-ab154743ccdc"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
@@ -14496,8 +14585,8 @@
         }
     ],
     "settings": {
-        "startSceneId": "b43ba1c1-1c2e-4d69-9c31-be9b9e1b03d5",
-        "startX": 11,
+        "startSceneId": "9e46957c-58ed-4e48-9dfb-45dd55340e94",
+        "startX": 3,
         "startY": 14,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
@@ -14507,7 +14596,7 @@
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": true,
         "worldScrollX": 1840,
-        "worldScrollY": 1819,
+        "worldScrollY": 1977,
         "zoom": 297.5,
         "sgbEnabled": false,
         "customHead": "",
@@ -14593,7 +14682,7 @@
         "customControlsSelect": [
             "Shift"
         ],
-        "debuggerEnabled": false,
+        "debuggerEnabled": true,
         "debuggerScriptType": "editor",
         "debuggerVariablesFilter": "all",
         "debuggerCollapsedPanes": [],
