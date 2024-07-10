@@ -3,17 +3,25 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "tilemaps/overworld.tmx",
+    "activeFile": "ghots_grotto.tmx",
     "expandedProjectPaths": [
-        "assets/fonts",
         ".",
+        "tilemaps",
         "assets",
-        "tilemaps"
+        "assets/fonts"
     ],
     "exportAsImage.includeBackgroundColor": true,
     "fileStates": {
         ":/automap-tiles.tsx": {
             "scaleInDock": 1
+        },
+        "ghots_grotto.tmx": {
+            "scale": 5.634027777777777,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 37.36225810427709,
+                "y": 50.49673363737213
+            }
         },
         "pirates_kenneynl.tsx": {
             "scaleInDock": 1,
@@ -41,13 +49,15 @@
     "openFiles": [
         "pirates_kenneynl.tsx",
         "tilemaps/overworld.tmx",
-        "village_kenneynl.tsx"
+        "village_kenneynl.tsx",
+        "ghots_grotto.tmx"
     ],
     "project": "mix_it_up.tiled-project",
     "recentFiles": [
         "pirates_kenneynl.tsx",
+        "tilemaps/overworld.tmx",
         "village_kenneynl.tsx",
-        "tilemaps/overworld.tmx"
+        "ghots_grotto.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

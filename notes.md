@@ -2,8 +2,8 @@
 
 - [X] Bananas
 - [X] Limes
-- [/] Oranges
-- [/] Papaya
+- [X] Oranges
+- [X] Papaya
 - [/] Pineapple 
 
 ## Bananas

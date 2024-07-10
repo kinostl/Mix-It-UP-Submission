@@ -476,13 +476,43 @@
                     "symbol": "actor_32",
                     "script": [
                         {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "0",
+                                "flag": 8,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Oh! Papaya!\nEnjoy it, its good"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "5a1eee9e-dfc6-454f-b957-fecd22bee6db"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "9a4afa6d-0f79-4f58-a774-e30bd3e467f7"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "060f3ba1-2387-4f48-b4c7-609d4aae8a7a"
+                        },
+                        {
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
                                     "Hmmm Papaya. Weird\nword, Papaya. ",
                                     "Papaaaaya. Papaya.\nPapayrate? ",
                                     "I could go for a\npapaya. I think",
-                                    "I left some in my\ncabin. And yet.",
+                                    "I left some on\nanother beach.",
                                     "This cold ocean\nbreeze calms me.",
                                     "...Papaya."
                                 ],
@@ -495,12 +525,35 @@
                             "args": {
                                 "text": [
                                     "You get an inkling\nthat this pirate",
-                                    "might have left\nsomething in his",
-                                    "cabin that Ghoti\nwould like to have"
+                                    "might have left\nsomething on a",
+                                    "beach that Ghoti\nwould like to have"
                                 ],
                                 "avatarId": ""
                             },
                             "id": "e2c6812d-7f57-4dd7-a39a-276e3a75e755"
+                        },
+                        {
+                            "command": "EVENT_ADD_FLAGS",
+                            "args": {
+                                "variable": "1",
+                                "flag1": false,
+                                "flag2": false,
+                                "flag3": false,
+                                "flag4": false,
+                                "flag5": false,
+                                "flag6": true,
+                                "flag7": false,
+                                "flag8": false,
+                                "flag9": false,
+                                "flag10": false,
+                                "flag11": false,
+                                "flag12": false,
+                                "flag13": false,
+                                "flag14": false,
+                                "flag15": false,
+                                "flag16": false
+                            },
+                            "id": "9f95baf3-df5c-4e14-b434-ca41f6e1ab2a"
                         }
                     ],
                     "startScript": [],
@@ -796,6 +849,29 @@
                                         "id": "365c5f07-9ff3-415e-b722-d2fb71f49923"
                                     },
                                     {
+                                        "command": "EVENT_ADD_FLAGS",
+                                        "args": {
+                                            "variable": "1",
+                                            "flag1": false,
+                                            "flag2": false,
+                                            "flag3": false,
+                                            "flag4": false,
+                                            "flag5": true,
+                                            "flag6": false,
+                                            "flag7": false,
+                                            "flag8": false,
+                                            "flag9": false,
+                                            "flag10": false,
+                                            "flag11": false,
+                                            "flag12": false,
+                                            "flag13": false,
+                                            "flag14": false,
+                                            "flag15": false,
+                                            "flag16": false
+                                        },
+                                        "id": "6a71e03e-d978-442a-89eb-eac1317f6409"
+                                    },
+                                    {
                                         "command": "EVENT_STOP",
                                         "args": {},
                                         "id": "84d94062-0830-43dc-a8f9-7bd7f2015706"
@@ -815,6 +891,29 @@
                                 "avatarId": ""
                             },
                             "id": "2918187a-d773-402e-a11f-00d50032c2d0"
+                        },
+                        {
+                            "command": "EVENT_ADD_FLAGS",
+                            "args": {
+                                "variable": "1",
+                                "flag1": false,
+                                "flag2": false,
+                                "flag3": false,
+                                "flag4": false,
+                                "flag5": true,
+                                "flag6": false,
+                                "flag7": false,
+                                "flag8": false,
+                                "flag9": false,
+                                "flag10": false,
+                                "flag11": false,
+                                "flag12": false,
+                                "flag13": false,
+                                "flag14": false,
+                                "flag15": false,
+                                "flag16": false
+                            },
+                            "id": "9cea5a57-5edf-4092-a053-333660397fbe"
                         }
                     ],
                     "startScript": [
@@ -2945,6 +3044,108 @@
                     "symbol": "actor_31",
                     "script": [
                         {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "0",
+                                "flag": 7,
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You reminisce on\nyour quest for ",
+                                                "oranges, and think\nabout the future",
+                                                "that they might \nhave."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "e21c8bac-6848-4fac-bf2b-863a61cb30bb"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "8e0267ce-b8df-434c-8be6-56c8e863bb7e"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "cf453fb6-d89c-4c90-866d-d4a18ebad305"
+                        },
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "0",
+                                "flag": 6,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
+                                        "args": {
+                                            "variable": "1",
+                                            "flag": 4,
+                                            "__collapseElse": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You look into the\nboat for ideas.",
+                                                            "You've finally\nGotten Lost...",
+                                                            "You look into the\nsmaller boat.",
+                                                            "You find nothing",
+                                                            "You look into the\nboat once again",
+                                                            "You find yourself",
+                                                            "thinking about\neverything",
+                                                            "that you have seen\ntoday",
+                                                            "You saw a very\nsmall tree on a ",
+                                                            "small island on a\nsmall lake a long",
+                                                            "time ago, at the\nstart of this day"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "995ca01b-eb9a-4b01-beb9-c496e35280d1"
+                                                },
+                                                {
+                                                    "command": "EVENT_STOP",
+                                                    "args": {},
+                                                    "id": "f0ca7290-2a99-4cef-9233-ed3e2ae692d8"
+                                                }
+                                            ],
+                                            "false": []
+                                        },
+                                        "id": "2bcf45a8-d214-4c53-8944-dfaae35c193d"
+                                    },
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You look into the \nboat for ideas.",
+                                                "You aren't lost\nyet so nothing",
+                                                "comes to mind.\n"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "3cc7f91e-6a99-4d9c-a576-29e8d1ebc2cb"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "6d949bc5-7338-4057-b5c6-066eda57632b"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "efa2bee4-323c-443c-8e9d-3c3b68071b04"
+                        },
+                        {
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
@@ -2967,13 +3168,36 @@
                                     "Palm Tree? Theres\nlots of palm trees",
                                     "Coming back here\nafter getting lost",
                                     "might be a good\nidea, or else you",
-                                    "would be searching\nfor long than it",
+                                    "would be searching\nfor longer than it",
                                     "takes to smash\nthrough this ",
                                     "really really long\nthought. "
                                 ],
                                 "avatarId": ""
                             },
                             "id": "fa20a02e-4dbc-4074-80f3-49eb1c75e553"
+                        },
+                        {
+                            "command": "EVENT_ADD_FLAGS",
+                            "args": {
+                                "variable": "0",
+                                "flag1": false,
+                                "flag2": false,
+                                "flag3": false,
+                                "flag4": false,
+                                "flag5": false,
+                                "flag6": false,
+                                "flag7": true,
+                                "flag8": false,
+                                "flag9": false,
+                                "flag10": false,
+                                "flag11": false,
+                                "flag12": false,
+                                "flag13": false,
+                                "flag14": false,
+                                "flag15": false,
+                                "flag16": false
+                            },
+                            "id": "515f1a4a-ca50-4926-9565-ca9c59619e31"
                         }
                     ],
                     "startScript": [],
@@ -6792,8 +7016,132 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_33",
-                    "script": [],
-                    "startScript": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "L0",
+                                "flag": 0,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "There was a Papaya\nhere at some point",
+                                                "Its gone now, in \nyour inventory."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "ff33744f-7688-4dde-91cb-711ce22e96c3"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "cb1cd48c-f141-4c01-bc9f-5ed734778a98"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "f234658f-d23f-4acc-9c65-d9d60dd06660"
+                        },
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "1",
+                                "flag": 5,
+                                "__collapseElse": false,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You found the\nPapayrate's Papaya",
+                                                "Finders keepers, \nGhoti's now.",
+                                                "The Papayrate will\nunderstand",
+                                                "Its the code\nafter all!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "80cf8ae3-f6dc-4df6-92d8-42d852b55e0f"
+                                    },
+                                    {
+                                        "command": "EVENT_ADD_FLAGS",
+                                        "args": {
+                                            "variable": "0",
+                                            "flag1": false,
+                                            "flag2": false,
+                                            "flag3": false,
+                                            "flag4": false,
+                                            "flag5": false,
+                                            "flag6": false,
+                                            "flag7": false,
+                                            "flag8": false,
+                                            "flag9": true,
+                                            "flag10": false,
+                                            "flag11": false,
+                                            "flag12": false,
+                                            "flag13": false,
+                                            "flag14": false,
+                                            "flag15": false,
+                                            "flag16": false
+                                        },
+                                        "id": "2fc7a248-ab9a-40a2-a169-6f29a5e953eb"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                ""
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "72926bca-be26-4324-a3cd-23f4199c10dd"
+                                    }
+                                ]
+                            },
+                            "id": "c873241c-9beb-4374-b6f2-873023a2613a"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "936a571b-8373-42fe-b452-8feb80bfb8e8"
+                        },
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "1",
+                                "flag": 5,
+                                "__collapseElse": true,
+                                "__disableElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        },
+                                        "id": "bafd29c8-4954-4ce5-9d97-280f8d74b248"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "b51bc795-039c-42e7-9045-bfeddc02453a"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -13324,7 +13672,115 @@
             "symbol": "scene_33",
             "x": 616,
             "y": 1000,
-            "actors": [],
+            "actors": [
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "80543dea-f6f9-4a95-8e1b-086778db1c1f",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_34",
+                    "script": [
+                        {
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "0",
+                                "flag": 7,
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You think about\nthe boat that got",
+                                                "you here, and the\npast it might have",
+                                                "had. Did it go on\nadventures? ",
+                                                "Like the one you \ntook it on today?"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "bb716d44-2710-431a-a6fd-ab8502e6be50"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "be748668-1e01-4bec-ba55-91d4a3769ec2"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "e943e8ae-70dc-4c19-8f25-12e4a2f4d93d"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Oh, a small tree",
+                                    "On a small island",
+                                    "Inside a small bit\nof the ocean",
+                                    "On the small tree\nyou find an orange",
+                                    "Oranges don't grow\nlike this usually",
+                                    "It might be best\nto leave it here",
+                                    "and take the news\nwith you to Ghoti"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "a3307f63-6ea9-4029-968d-3baecd3fa9f9"
+                        },
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "You received:\nMap To Oranges",
+                                    "(Future Map)\nSpeculated Value:",
+                                    "Oranges"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "687e4e7e-dcd5-4f49-aa39-1291d631022a"
+                        },
+                        {
+                            "command": "EVENT_ADD_FLAGS",
+                            "args": {
+                                "variable": "0",
+                                "flag1": false,
+                                "flag2": false,
+                                "flag3": false,
+                                "flag4": false,
+                                "flag5": false,
+                                "flag6": false,
+                                "flag7": false,
+                                "flag8": true,
+                                "flag9": false,
+                                "flag10": false,
+                                "flag11": false,
+                                "flag12": false,
+                                "flag13": false,
+                                "flag14": false,
+                                "flag15": false,
+                                "flag16": false
+                            },
+                            "id": "9f836c48-1435-439b-8b20-bae19cb951af"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "55710d2b-6820-421d-a7ef-c1a744304cd3",
+                    "x": 11,
+                    "y": 15
+                }
+            ],
             "triggers": [
                 {
                     "name": "",
@@ -15958,7 +16414,9 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "blank_0.png"
+            "filename": "blank_0.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "a683eea5-b730-4035-9bfc-6e130a20162f",
@@ -15968,7 +16426,9 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "ghots_grotto.png"
+            "filename": "ghots_grotto.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "b54c18df-616d-463d-9609-2c238e8b6bf6",
@@ -15978,7 +16438,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_00.png"
+            "filename": "section_00.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "bbda7a7e-1d54-4b9c-a9b8-ee776c29c420",
@@ -16036,7 +16498,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_05.png"
+            "filename": "section_05.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "a3047cc0-83ff-41a3-9312-b7f64b59d058",
@@ -16058,7 +16522,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_07.png"
+            "filename": "section_07.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "fb2768a0-eff8-46e8-b0af-2438bf076632",
@@ -16080,7 +16546,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_09.png"
+            "filename": "section_09.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "5c406d44-7a9b-4cd9-8966-c4e42a5fb863",
@@ -16090,7 +16558,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_10.png"
+            "filename": "section_10.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "9aa46147-fef4-4bdb-b798-85c2601c1245",
@@ -16100,7 +16570,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_11.png"
+            "filename": "section_11.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "5bd3d435-91f1-4238-a76f-d98d698fc3c8",
@@ -16218,7 +16690,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_21.png"
+            "filename": "section_21.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "bf8252f3-034c-4bee-8d78-50b54902710e",
@@ -16228,7 +16702,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_22.png"
+            "filename": "section_22.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "98657fe1-a1d9-4f7a-be4c-25948d9c75cb",
@@ -16262,7 +16738,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_25.png"
+            "filename": "section_25.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "4b4579d3-9277-4d03-8708-91647e139b1a",
@@ -16284,7 +16762,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_27.png"
+            "filename": "section_27.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "d01161ed-9bd1-44b5-8f06-d9557788a017",
@@ -16294,7 +16774,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_28.png"
+            "filename": "section_28.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "a5395216-5be0-4376-8307-7edc2c508347",
@@ -16304,7 +16786,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_29.png"
+            "filename": "section_29.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "b454e76b-0143-4a86-b1a9-a452d61df036",
@@ -16314,7 +16798,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_30.png"
+            "filename": "section_30.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "1ce599da-d44a-40a5-ac7d-8040d0938cad",
@@ -16324,7 +16810,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_31.png"
+            "filename": "section_31.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "3cf16bc3-429d-4484-a025-e4fa7db286ca",
@@ -16334,7 +16822,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_32.png"
+            "filename": "section_32.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "163fcccb-b150-4394-b1c4-ed62d52d5de0",
@@ -16344,7 +16834,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_33.png"
+            "filename": "section_33.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "b9bacae8-5fd0-45dc-8ea4-f0ad0d623d05",
@@ -16354,7 +16846,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_34.png"
+            "filename": "section_34.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "e9806930-13d4-48c3-bfb9-d6e6c22e8c75",
@@ -16364,7 +16858,9 @@
             "height": 20,
             "imageWidth": 176,
             "imageHeight": 160,
-            "filename": "section_35.png"
+            "filename": "section_35.png",
+            "tileColors": [],
+            "autoColor": false
         }
     ],
     "spriteSheets": [
@@ -18865,6 +19361,133 @@
             "animSpeed": 15
         },
         {
+            "id": "80543dea-f6f9-4a95-8e1b-086778db1c1f",
+            "name": "tile_0088",
+            "symbol": "sprite_tile_0088",
+            "numFrames": 1,
+            "filename": "tile_0088.png",
+            "checksum": "cca9a65856089ccf7c897522a48a61e9e55669bb",
+            "width": 16,
+            "height": 16,
+            "states": [
+                {
+                    "id": "61f27a75-d365-42cd-84ba-550c687eac13",
+                    "name": "",
+                    "animationType": "fixed",
+                    "flipLeft": false,
+                    "animations": [
+                        {
+                            "id": "23fe2bbb-0cf1-4db4-b481-9eb70dabf8f5",
+                            "frames": [
+                                {
+                                    "id": "aef21af0-a52c-4c7e-ac4f-03099e74e05d",
+                                    "tiles": [
+                                        {
+                                            "id": "c7facf75-4a32-46cb-a02e-4a38d617ab76",
+                                            "x": 0,
+                                            "y": 0,
+                                            "sliceX": 0,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "5e199e3c-7bda-41fa-b4c2-477e4c7a9646",
+                                            "x": 8,
+                                            "y": 0,
+                                            "sliceX": 8,
+                                            "sliceY": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "palette": 0,
+                                            "paletteIndex": 0,
+                                            "objPalette": "OBP0",
+                                            "priority": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "45318251-f93f-4326-9dc4-f6262168ebd8",
+                            "frames": [
+                                {
+                                    "id": "7774fc20-128e-4586-9a0a-1f326baad47a",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "f0eed1fd-22f9-4bcd-be9e-241f9ac52804",
+                            "frames": [
+                                {
+                                    "id": "c91b5f97-cb32-4630-b7f7-136bc06c9d60",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "42b9a8ca-7db6-4f04-ab20-59806cef498e",
+                            "frames": [
+                                {
+                                    "id": "7f0cc864-f0c5-46b8-9b8b-c2d67a2e902a",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "6d2e3c5e-437a-4212-a0b4-3a0ac6acf9bd",
+                            "frames": [
+                                {
+                                    "id": "6669fa79-2112-460f-9d85-d4aad0413771",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "d739cb37-9a5b-499f-b418-1a7196f78447",
+                            "frames": [
+                                {
+                                    "id": "87f0fc43-4c2f-4463-ae08-ea6979ed6f5c",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ea309c57-18c2-40df-aceb-189e60d55503",
+                            "frames": [
+                                {
+                                    "id": "1d220eae-72df-428b-aadd-f78f3526f654",
+                                    "tiles": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "aaf5dbf7-47a2-450a-ba6b-01ddbc18686a",
+                            "frames": [
+                                {
+                                    "id": "97a7bd49-971a-469d-8b5b-9e625ce35f11",
+                                    "tiles": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "numTiles": 2,
+            "canvasWidth": 16,
+            "canvasHeight": 16,
+            "boundsX": 0,
+            "boundsY": 0,
+            "boundsWidth": 16,
+            "boundsHeight": 16,
+            "animSpeed": 15
+        },
+        {
             "id": "9b2064ed-dc60-471a-95ac-067b3f58e6f7",
             "name": "tile_0089",
             "symbol": "sprite_tile_0089",
@@ -20396,7 +21019,10 @@
                 "flag3": "Bananas",
                 "flag4": "Skeleton Key",
                 "flag5": "Rotten Eclairs",
-                "flag6": "Limes"
+                "flag6": "Limes",
+                "flag7": "Small Boat",
+                "flag8": "Oranges",
+                "flag9": "Papaya"
             }
         },
         {
@@ -20407,7 +21033,9 @@
                 "flag1": "Cleared Cannonballs",
                 "flag2": "Ghoti Asks For Help",
                 "flag3": "Ghost Asks for Something",
-                "flag4": "Treasure Open"
+                "flag4": "Treasure Open",
+                "flag5": "Get Lost!",
+                "flag6": "Papayrate"
             }
         }
     ],
@@ -20432,9 +21060,9 @@
         "showConnections": "all",
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 120,
-        "worldScrollY": 632,
-        "zoom": 104,
+        "worldScrollX": 2813,
+        "worldScrollY": 1975,
+        "zoom": 301.5,
         "sgbEnabled": false,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
