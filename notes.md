@@ -4,7 +4,7 @@
 - [X] Limes
 - [X] Oranges
 - [X] Papaya
-- [/] Pineapple 
+- [X] Pineapple 
 
 ## Bananas
 
@@ -38,7 +38,7 @@ Scene 24 has buried treasure that'll appear after this. Talking to the pirate ag
 
 # Other Todo
 
-- [ ] Inventory Screen
-- [ ] You Win Screen
+- [X] Inventory Screen
+- [X] You Win Screen
 - [ ] Intro Screen
 - [ ] Title Screen?
