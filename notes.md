@@ -20,6 +20,10 @@ Ghost does not currently add Limes to inventory.
 (Make joke about Ananas) 
 Ended up making a joke about Pine and apples. Box on the beach has them. Need a crowbar or something to open it. ...Canon?
 
+Talk to catcus, give it bottle of water, get sand dollar, give dollar to sword, get pineapple
+You find empty bottle in ocean
+You fill it at the pool (fresh water lake)
+
 ## Oranges
 
 The boat with the second slightly smaller boat has a note talking about slightly smaller palm trees having oranges, and coming back after getting lost. The tiniest palm tree/shrub in the lake on the bottom of the map has it. 
