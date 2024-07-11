@@ -5379,7 +5379,7 @@
                     "name": "",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -16399,6 +16399,11 @@
                                             "actorId": "$self$"
                                         },
                                         "id": "a1bc30c2-98d8-451c-91fa-74adaa013c16"
+                                    },
+                                    {
+                                        "command": "EVENT_STOP",
+                                        "args": {},
+                                        "id": "5dd678ca-b507-43bc-b823-767341bfea0f"
                                     }
                                 ],
                                 "false": []
@@ -17015,7 +17020,7 @@
                     "name": "",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -17024,8 +17029,28 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_29",
-                    "script": [],
-                    "startScript": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "These Apartments\ndedicated to ",
+                                    "their inventor:\nCaptain Aparte"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "4a496489-672c-422e-a8b4-88bcac0b0673"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "eef96d6f-449d-478b-93ac-f40196655d4f"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -20525,7 +20550,7 @@
                                         "id": "363e7ad1-5f14-4734-9db1-d8366110b3e9"
                                     },
                                     {
-                                        "command": "EVENT_ADD_FLAGS",
+                                        "command": "EVENT_CLEAR_FLAGS",
                                         "args": {
                                             "variable": "0",
                                             "flag1": true,
@@ -20545,7 +20570,7 @@
                                             "flag15": false,
                                             "flag16": false
                                         },
-                                        "id": "5d922c6d-b1fc-4268-87b9-a8c60899878c"
+                                        "id": "8ee76924-3d4b-4cd0-8b42-f7872fc71749"
                                     },
                                     {
                                         "command": "EVENT_SCENE_PUSH_STATE",
@@ -22052,7 +22077,18 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_54",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I'M A TREE?!"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "4082a664-7651-4810-9f12-f8fca1018824"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -22629,7 +22665,7 @@
                     "name": "",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -22638,8 +22674,27 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_27",
-                    "script": [],
-                    "startScript": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Please do NOT feed\nthe trees."
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "aa5166ae-474e-4e23-be94-7dad9c7a96df"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "7a58d098-326f-47b6-a307-76eb6d1aea0d"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -22661,7 +22716,18 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_52",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Quack Quack"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "d3aede16-4409-4d30-8b4d-6b7f24e4a5c7"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -22684,7 +22750,18 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_53",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "ARF I mean quack"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "60a9d281-13db-42c5-b541-dc69b71e75d0"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -23261,7 +23338,7 @@
                     "name": "",
                     "frame": 0,
                     "animate": false,
-                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "spriteSheetId": "6d68e0a2-9f42-4b73-8ef5-c74a81fc7535",
                     "direction": "down",
                     "moveSpeed": 1,
                     "animSpeed": 15,
@@ -23270,8 +23347,27 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_26",
-                    "script": [],
-                    "startScript": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Adventurer's Guild\nJust North of Here"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "f77386e6-0f22-43e6-83a6-c13a55aaa17b"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "c3b40b37-ac9e-4ab8-b467-b1b7b83b11ee"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -23293,7 +23389,19 @@
                     "persistent": false,
                     "collisionGroup": "",
                     "symbol": "actor_51",
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I am not the right\nsmall tree",
+                                    "This is not a\nsmall island"
+                                ],
+                                "avatarId": ""
+                            },
+                            "id": "185fdc19-f288-49bc-bb55-8c43209194a0"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -24001,6 +24109,29 @@
                                                         "flag16": false
                                                     },
                                                     "id": "11620ef1-5268-47a5-8db8-41e46f4ed34f"
+                                                },
+                                                {
+                                                    "command": "EVENT_CLEAR_FLAGS",
+                                                    "args": {
+                                                        "variable": "0",
+                                                        "flag1": false,
+                                                        "flag2": false,
+                                                        "flag3": false,
+                                                        "flag4": false,
+                                                        "flag5": true,
+                                                        "flag6": false,
+                                                        "flag7": false,
+                                                        "flag8": false,
+                                                        "flag9": false,
+                                                        "flag10": false,
+                                                        "flag11": false,
+                                                        "flag12": false,
+                                                        "flag13": false,
+                                                        "flag14": false,
+                                                        "flag15": false,
+                                                        "flag16": false
+                                                    },
+                                                    "id": "9c249267-b290-4231-a477-661ef0eaf010"
                                                 }
                                             ],
                                             "false": []
@@ -24025,7 +24156,8 @@
                                     "Whats that? \nFruit Grotto?",
                                     "Whats a Grotto.\nI have limes",
                                     "You want limes?\nGo get me a uh",
-                                    "Whatever. Bring me\nsomething I would\nlike. I'm picky."
+                                    "Whatever. Bring me\nsomething that",
+                                    "I would like.\nBeware, I'm picky."
                                 ],
                                 "avatarId": ""
                             },
@@ -26876,7 +27008,9 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "intro.png"
+            "filename": "intro.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "75ee12b9-c4a0-43ae-849d-419ee42fee0d",
@@ -26886,7 +27020,9 @@
             "height": 18,
             "imageWidth": 320,
             "imageHeight": 144,
-            "filename": "inventory.png"
+            "filename": "inventory.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "b54c18df-616d-463d-9609-2c238e8b6bf6",
@@ -32618,23 +32754,6 @@
             }
         },
         {
-            "id": "c9b24465-04e9-4abc-b903-29a1fb2cc857__L0",
-            "name": "Goal",
-            "symbol": "var_goal",
-            "flags": {
-                "flag6": "Limes",
-                "flag8": "Oranges",
-                "flag9": "Papaya",
-                "flag13": "Pineapple",
-                "flag3": "Bananas"
-            }
-        },
-        {
-            "id": "57a14471-be0a-4e29-88be-e310ce4aaccd__L0",
-            "name": "Goal",
-            "symbol": "var_goal_0"
-        },
-        {
             "id": "2",
             "name": "Overlay X",
             "symbol": "var_overlay_x"
@@ -32678,6 +32797,23 @@
             "id": "10",
             "name": "Has Boat",
             "symbol": "var_has_boat"
+        },
+        {
+            "id": "c9b24465-04e9-4abc-b903-29a1fb2cc857__L0",
+            "name": "Goal",
+            "symbol": "var_goal",
+            "flags": {
+                "flag6": "Limes",
+                "flag8": "Oranges",
+                "flag9": "Papaya",
+                "flag13": "Pineapple",
+                "flag3": "Bananas"
+            }
+        },
+        {
+            "id": "57a14471-be0a-4e29-88be-e310ce4aaccd__L0",
+            "name": "Goal",
+            "symbol": "var_goal_0"
         }
     ],
     "engineFieldValues": [
@@ -32701,8 +32837,8 @@
         "showConnections": "selected",
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 221,
-        "worldScrollY": 119,
+        "worldScrollX": 2275,
+        "worldScrollY": 2568,
         "zoom": 262,
         "sgbEnabled": false,
         "customHead": "",
