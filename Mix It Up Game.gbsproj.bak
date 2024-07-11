@@ -26818,14 +26818,14 @@
                             {
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
-                                    "sceneId": "f299752f-b9b5-4b37-b022-168326f4e26a",
+                                    "sceneId": "691b9f76-8210-457e-a97e-8f6c63fcf0c0",
                                     "x": {
                                         "type": "number",
-                                        "value": 11
+                                        "value": 4
                                     },
                                     "y": {
                                         "type": "number",
-                                        "value": 4
+                                        "value": 13
                                     },
                                     "direction": "right",
                                     "fadeSpeed": "2"
@@ -32701,8 +32701,8 @@
         "showConnections": "selected",
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 1248,
-        "worldScrollY": 395,
+        "worldScrollX": 0,
+        "worldScrollY": 2607,
         "zoom": 262,
         "sgbEnabled": false,
         "customHead": "",
