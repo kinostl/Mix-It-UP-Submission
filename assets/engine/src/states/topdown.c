@@ -1,6 +1,7 @@
 #pragma bank 255
 
 #include "data/states_defines.h"
+#include "data/game_globals.h"
 #include "states/topdown.h"
 
 #include "actor.h"
@@ -35,6 +36,7 @@ void topdown_init(void) BANKED {
     }
 }
 
+
 void topdown_update(void) BANKED {
     actor_t *hit_actor;
     UBYTE tile_start, tile_end;
@@ -63,7 +65,7 @@ void topdown_update(void) BANKED {
             tile_end   = (((PLAYER.pos.y >> 4) + PLAYER.bounds.bottom) >> 3) + 1;
             UBYTE tile_x = ((PLAYER.pos.x >> 4) + PLAYER.bounds.left) >> 3;
             while (tile_start != tile_end) {
-                if (tile_at(tile_x - 1, tile_start) & COLLISION_RIGHT) {
+                if (tile_at_boat(tile_x - 1, tile_start) & COLLISION_RIGHT) {
                     player_moving = FALSE;
                     break;
                 }
@@ -78,7 +80,7 @@ void topdown_update(void) BANKED {
             tile_end   = (((PLAYER.pos.y >> 4) + PLAYER.bounds.bottom) >> 3) + 1;
             UBYTE tile_x = ((PLAYER.pos.x >> 4) + PLAYER.bounds.right) >> 3;
             while (tile_start != tile_end) {
-                if (tile_at(tile_x + 1, tile_start) & COLLISION_LEFT) {
+                if (tile_at_boat(tile_x + 1, tile_start) & COLLISION_LEFT) {
                     player_moving = FALSE;
                     break;
                 }
@@ -93,7 +95,7 @@ void topdown_update(void) BANKED {
             tile_end   = (((PLAYER.pos.x >> 4) + PLAYER.bounds.right) >> 3) + 1;
             UBYTE tile_y = ((PLAYER.pos.y >> 4) + PLAYER.bounds.top) >> 3;
             while (tile_start != tile_end) {
-                if (tile_at(tile_start, tile_y - 1) & COLLISION_BOTTOM) {
+                if (tile_at_boat(tile_start, tile_y - 1) & COLLISION_BOTTOM) {
                     player_moving = FALSE;
                     break;
                 }
@@ -108,7 +110,7 @@ void topdown_update(void) BANKED {
             tile_end   = (((PLAYER.pos.x >> 4) + PLAYER.bounds.right) >> 3) + 1;
             UBYTE tile_y = ((PLAYER.pos.y >> 4) + PLAYER.bounds.bottom) >> 3;
             while (tile_start != tile_end) {
-                if (tile_at(tile_start, tile_y + 1) & COLLISION_TOP) {
+                if (tile_at_boat(tile_start, tile_y + 1) & COLLISION_TOP) {
                     player_moving = FALSE;
                     break;
                 }

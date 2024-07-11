@@ -40,5 +40,4 @@ Scene 24 has buried treasure that'll appear after this. Talking to the pirate ag
 
 - [X] Inventory Screen
 - [X] You Win Screen
-- [ ] Intro Screen
-- [ ] Title Screen?
+- [X] Intro Screen
