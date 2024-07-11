@@ -3671,7 +3671,15 @@
                             "id": "f4c5a819-a968-4a5a-a9aa-63cb3493d9a7"
                         }
                     ],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "539e239a-22bc-4cb2-988b-da4acef46fe2"
+                        }
+                    ],
                     "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
@@ -13157,6 +13165,13 @@
                                 "false": []
                             },
                             "id": "d979e305-c2d4-45e6-95cf-620fd72cbbed"
+                        },
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "6221bcd4-5370-428b-80bb-d7e90c605c5c"
                         }
                     ],
                     "updateScript": [],
@@ -32686,8 +32701,8 @@
         "showConnections": "selected",
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 1563,
-        "worldScrollY": 2822,
+        "worldScrollX": 1248,
+        "worldScrollY": 395,
         "zoom": 262,
         "sgbEnabled": false,
         "customHead": "",
