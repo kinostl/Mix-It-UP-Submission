@@ -11263,6 +11263,16 @@
                                 "flag16": false
                             },
                             "id": "515f1a4a-ca50-4926-9565-ca9c59619e31"
+                        },
+                        {
+                            "command": "EVENT_SET_VALUE",
+                            "args": {
+                                "variable": "10",
+                                "value": {
+                                    "type": "true"
+                                }
+                            },
+                            "id": "5ecf2d6c-be78-4acc-9a67-01364d9afff0"
                         }
                     ],
                     "startScript": [],
@@ -26681,81 +26691,6 @@
             "triggers": [],
             "script": [
                 {
-                    "command": "GUD_EVENT_TD_COLLISION_SCRIPT",
-                    "args": {
-                        "state": "7",
-                        "retrigger": false,
-                        "__scriptTabs": "scriptinput",
-                        "__scriptTabsEnd": "scriptinput",
-                        "__collapse": false
-                    },
-                    "children": {
-                        "script": [
-                            {
-                                "command": "EVENT_IF",
-                                "args": {
-                                    "condition": {
-                                        "type": "not",
-                                        "value": {
-                                            "type": "variable",
-                                            "value": "8"
-                                        }
-                                    },
-                                    "__collapseElse": true,
-                                    "__disableElse": true
-                                },
-                                "children": {
-                                    "true": [
-                                        {
-                                            "command": "EVENT_SET_VALUE",
-                                            "args": {
-                                                "variable": "8",
-                                                "value": {
-                                                    "type": "true"
-                                                }
-                                            },
-                                            "id": "b12d9736-cf77-45a3-a414-48088c0a6add"
-                                        },
-                                        {
-                                            "command": "EVENT_ACTOR_SET_STATE",
-                                            "args": {
-                                                "actorId": "$self$",
-                                                "spriteStateId": "Boat Mode",
-                                                "loopAnim": true
-                                            },
-                                            "id": "2f0f3cab-a465-41d7-88d0-c2ad7d009a43"
-                                        }
-                                    ],
-                                    "false": []
-                                },
-                                "id": "860c9e2d-5eae-44fc-91d7-437605e8f59e"
-                            }
-                        ],
-                        "endscript": [
-                            {
-                                "command": "EVENT_SET_VALUE",
-                                "args": {
-                                    "variable": "8",
-                                    "value": {
-                                        "type": "false"
-                                    }
-                                },
-                                "id": "9d534bdd-8174-4900-9e6d-f1dd1eaa4ed6"
-                            },
-                            {
-                                "command": "EVENT_ACTOR_SET_STATE",
-                                "args": {
-                                    "actorId": "$self$",
-                                    "spriteStateId": "",
-                                    "loopAnim": true
-                                },
-                                "id": "c03598d2-9203-40a1-b5f9-2910d28fe1e1"
-                            }
-                        ]
-                    },
-                    "id": "05776bb7-2aef-431e-a68e-eb823498622f"
-                },
-                {
                     "command": "EVENT_SET_INPUT_SCRIPT",
                     "args": {
                         "input": [
@@ -26779,11 +26714,11 @@
                                     "sceneId": "f299752f-b9b5-4b37-b022-168326f4e26a",
                                     "x": {
                                         "type": "number",
-                                        "value": 3
+                                        "value": 11
                                     },
                                     "y": {
                                         "type": "number",
-                                        "value": 13
+                                        "value": 4
                                     },
                                     "direction": "right",
                                     "fadeSpeed": "2"
@@ -26797,7 +26732,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": ""
         }
     ],
     "backgrounds": [
@@ -32260,6 +32196,115 @@
                     "id": "d547e8fe-ed22-4158-8bca-156d52a1908b"
                 },
                 {
+                    "command": "EVENT_IF",
+                    "args": {
+                        "condition": {
+                            "type": "variable",
+                            "value": "8"
+                        },
+                        "__collapseElse": true
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "Boat Mode",
+                                    "loopAnim": true
+                                },
+                                "id": "f331ed97-c72c-4260-abbb-484e4e8c6bbe"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "id": "f7da20ec-72e2-4486-894f-b113322ed53b"
+                },
+                {
+                    "command": "GUD_EVENT_TD_COLLISION_SCRIPT",
+                    "args": {
+                        "state": "7",
+                        "retrigger": false,
+                        "__scriptTabs": "scriptinput",
+                        "__scriptTabsEnd": "scriptinput",
+                        "__collapse": false
+                    },
+                    "children": {
+                        "script": [
+                            {
+                                "command": "EVENT_IF",
+                                "args": {
+                                    "condition": {
+                                        "type": "and",
+                                        "valueA": {
+                                            "type": "not",
+                                            "value": {
+                                                "type": "variable",
+                                                "value": "8"
+                                            }
+                                        },
+                                        "valueB": {
+                                            "type": "variable",
+                                            "value": "10"
+                                        }
+                                    },
+                                    "__collapseElse": true,
+                                    "__disableElse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_SET_VALUE",
+                                            "args": {
+                                                "variable": "8",
+                                                "value": {
+                                                    "type": "true"
+                                                },
+                                                "__collapse": true
+                                            },
+                                            "id": "e4abea06-2e3e-43f1-acc9-b4a000227568"
+                                        },
+                                        {
+                                            "command": "EVENT_ACTOR_SET_STATE",
+                                            "args": {
+                                                "actorId": "$self$",
+                                                "spriteStateId": "Boat Mode",
+                                                "loopAnim": true,
+                                                "__collapse": true
+                                            },
+                                            "id": "254e7781-1545-4fcc-872e-ceac1e3d7526"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "a9c930e4-5170-4156-9180-7dd014f5f9ec"
+                            }
+                        ],
+                        "endscript": [
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "8",
+                                    "value": {
+                                        "type": "false"
+                                    }
+                                },
+                                "id": "7f239994-7927-48d4-b6d2-3d19569b5ce6"
+                            },
+                            {
+                                "command": "EVENT_ACTOR_SET_STATE",
+                                "args": {
+                                    "actorId": "$self$",
+                                    "spriteStateId": "",
+                                    "loopAnim": true
+                                },
+                                "id": "9a099bc8-90b2-4c25-848d-014518a175c7"
+                            }
+                        ]
+                    },
+                    "id": "77eafddd-8119-4838-8e5c-8672f4cfc84f"
+                },
+                {
                     "command": "EVENT_SET_INPUT_SCRIPT",
                     "args": {
                         "input": [
@@ -32516,6 +32561,16 @@
             "id": "8",
             "name": "Is Boat",
             "symbol": "var_is_boat"
+        },
+        {
+            "id": "9",
+            "name": "Blocked",
+            "symbol": "var_blocked"
+        },
+        {
+            "id": "10",
+            "name": "Has Boat",
+            "symbol": "var_has_boat"
         }
     ],
     "engineFieldValues": [
@@ -32536,11 +32591,11 @@
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
-        "showConnections": false,
+        "showConnections": "selected",
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 0,
-        "worldScrollY": 541,
+        "worldScrollX": 120,
+        "worldScrollY": 138,
         "zoom": 104,
         "sgbEnabled": false,
         "customHead": "",
@@ -32576,7 +32631,7 @@
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
         "defaultCharacterEncoding": "",
         "defaultPlayerSprites": {
-            "TOPDOWN": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+            "TOPDOWN": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
             "PLATFORM": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
             "ADVENTURE": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
             "SHMUP": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
